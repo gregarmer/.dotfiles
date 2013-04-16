@@ -1,0 +1,28 @@
+[user]
+    name = Gregory Armer
+    email = greg@sigterm.sh
+[alias]
+    st = status
+    ci = commit
+    di = diff --color
+    ll = log --stat --pretty
+[core]
+    quotepath = false
+    excludesfile = /Users/greg/.gitignore_global
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[merge]
+    tool = vimdiff
+[mergetool "diffmerge"]
+    cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+    trustExitCode = true
+[mergetool]
+    keepBackup = false
+[difftool "diffmerge"]
+    cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[diff]
+    tool = vimdiff
