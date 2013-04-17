@@ -26,6 +26,7 @@ __git_files () {
 }
 
 alias tr="tmux rename-window"
+export WORDCHARS=${WORDCHARS//[&.;\/]}
 
 if [[ $TMUX != "" && $WINDOW_TITLE != "" ]]; then
   tr $WINDOW_TITLE
