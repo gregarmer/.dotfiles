@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 FILES=".gitconfig .zlogin .zprofile .zshenv .zshrc"
-FILES="$FILES .zprezto .zpreztorc"
+FILES="$FILES .zprezto .zpreztorc .tmux.conf"
 
 cd ~
 
