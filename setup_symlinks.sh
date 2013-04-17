@@ -6,5 +6,7 @@ FILES="$FILES .zprezto .zpreztorc"
 cd ~
 
 for f in $FILES; do
-  ln -s .dotfiles/$f
+  if [ ! -L $f ]; then
+    ln -s .dotfiles/$f
+  fi
 done
