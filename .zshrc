@@ -25,9 +25,9 @@ __git_files () {
   _wanted files expl 'local files' _files
 }
 
-alias tr="tmux rename-window"
+alias tmr="tmux rename-window"
 export WORDCHARS=${WORDCHARS//[&.;\/]}
 
 if [[ $TMUX != "" && $WINDOW_TITLE != "" ]]; then
-  tr $WINDOW_TITLE
+  tmr $WINDOW_TITLE
 fi
