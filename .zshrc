@@ -32,4 +32,4 @@ if [[ $TMUX != "" && $WINDOW_TITLE != "" ]]; then
   tmr $WINDOW_TITLE
 fi
 
-PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+PROMPT="%m $PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
