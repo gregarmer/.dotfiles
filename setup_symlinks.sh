@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-FILES=".gitconfig .zlogin .zprofile .zshenv .zshrc"
+FILES=".gitconfig .zlogin .zprofile .zshenv .zshrc .vimrc"
 FILES="$FILES .zprezto .zpreztorc .tmux.conf .muttrc"
 
 cd ~

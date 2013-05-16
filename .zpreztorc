@@ -33,10 +33,10 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'fasd' \
+  'python' \
   'prompt' \
   'rsync' \
   'tmux' \
-  'python' \
   'git'
 
 #

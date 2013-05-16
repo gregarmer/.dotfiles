@@ -28,6 +28,10 @@ __git_files () {
 alias tmr="tmux rename-window"
 export WORDCHARS=${WORDCHARS//[&.;\/]}
 
+# virtualenvwrapper
+export WORKON_HOME=~/code/venv
+source /Users/greg/code/vepy/bin/virtualenvwrapper.sh
+
 if [[ $TMUX != "" && $WINDOW_TITLE != "" ]]; then
   tmr $WINDOW_TITLE
 fi
