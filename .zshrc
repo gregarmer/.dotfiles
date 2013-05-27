@@ -29,7 +29,7 @@ alias tmr="tmux rename-window"
 export WORDCHARS=${WORDCHARS//[&.;\/]}
 
 # virtualenvwrapper
-export WORKON_HOME=~/code/venv
+export WORKON_HOME=~/.virtualenvs
 source /Users/greg/code/vepy/bin/virtualenvwrapper.sh
 
 if [[ $TMUX != "" && $WINDOW_TITLE != "" ]]; then
